@@ -1,0 +1,23 @@
+{
+  "name": "weather-front-end",
+  "version": "0.1.0",
+  "description": "A front-end weather application pulling from OpenWeatherMap data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gramasu000/weather-front-end.git"
+  },
+  "keywords": [
+    "weather",
+    "react"
+  ],
+  "author": "Gautam Ramasubramanian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gramasu000/weather-front-end/issues"
+  },
+  "homepage": "https://github.com/gramasu000/weather-front-end#readme"
+}
