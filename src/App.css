@@ -2,8 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
-
-.App {
-    @apply m-4;
-    @apply font-sans text-purple-600;
-}

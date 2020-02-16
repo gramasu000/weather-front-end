@@ -1,0 +1,10 @@
+.Header {
+    @apply bg-gray-700;
+    @apply flex justify-center;
+}
+
+.Header h1 {
+    @apply flex-none;
+    @apply m-3;
+    @apply font-mono font-bold text-2xl text-gray-100; 
+}
