@@ -1,3 +1,27 @@
-.Card {
+.CardContainer {
     @apply flex justify-center;
+}
+
+.Card {
+    @apply m-4 shadow-md bg-gray-200 p-4;
+}
+
+.TextCenter {
+    @apply flex justify-center;
+}
+
+.Card h1 {
+    @apply text-6xl uppercase;
+}
+
+.Card h2 {
+    @apply text-4xl uppercase;
+}
+
+.Card h3 {
+    @apply text-4xl uppercase;
+}
+
+.Card p {
+    @apply text-base uppercase;
 }
