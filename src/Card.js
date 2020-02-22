@@ -17,8 +17,8 @@ class Card extends Component {
         } else if (this.props.type === "weather") {
             return (
                 <div class="CardContainer">
-                    <WeatherCard content={this.props.content} />
-                    <TemperatureCard content={this.props.content} />
+                    <WeatherCard content={this.props.content.weather} />
+                    <TemperatureCard content={this.props.content.temperature} />
                 </div>
             );
         }

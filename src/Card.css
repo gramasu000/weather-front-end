@@ -11,17 +11,28 @@
 }
 
 .Card h1 {
-    @apply text-6xl uppercase;
+    @apply text-3xl uppercase;
 }
 
 .Card h2 {
-    @apply text-4xl uppercase;
-}
-
-.Card h3 {
-    @apply text-4xl uppercase;
+    @apply text-xl uppercase;
 }
 
 .Card p {
-    @apply text-base uppercase;
+    @apply text-xs uppercase;
+}
+
+@screen md {
+    .Card h1 {
+        @apply text-6xl;
+    }
+
+    .Card h2 {
+        @apply text-4xl;
+    }
+
+    .Card p {
+        @apply text-base;
+    }
+
 }

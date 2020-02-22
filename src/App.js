@@ -14,13 +14,17 @@ class App extends Component {
                 text: "New York City, USA"
             },
             weather: {
-                icon: "01d",
-                main: "sunny",
-                description: "mostly sunny",
-                temp: "41°F",
-                tempmin: "38°F",
-                tempmax: "44°F",
-                feellike: "40°F"
+                weather: {
+                    icon: "01d",
+                    main: "sunny",
+                    description: "mostly sunny"
+                },
+                temperature: {
+                    temp: "41°F",
+                    tempmin: "38°F",
+                    tempmax: "44°F",
+                    feellike: "40°F"
+                }
             }
         }
     }

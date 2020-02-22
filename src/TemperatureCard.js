@@ -8,11 +8,11 @@ class TemperatureCard extends Component {
             <div class="Card" id="TemperatureCard">
                 <div class="flex">
                     <div>
-                        <h1>{this.props.content.temp}</h1>
+                        <h1 class="mt-2 md:mt-0">{this.props.content.temp}</h1>
                     </div>
                     <div class="ml-4">
-                        <h3>{this.props.content.tempmax}</h3>
-                        <h3>{this.props.content.tempmin}</h3>
+                        <h2>{this.props.content.tempmax}</h2>
+                        <h2>{this.props.content.tempmin}</h2>
                     </div>
                 </div>
                 <div class="mt-4">
