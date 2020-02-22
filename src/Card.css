@@ -11,15 +11,15 @@
 }
 
 .Card h1 {
-    @apply text-3xl uppercase;
+    @apply text-3xl uppercase text-center;
 }
 
 .Card h2 {
-    @apply text-xl uppercase;
+    @apply text-xl uppercase text-center;
 }
 
 .Card p {
-    @apply text-xs uppercase;
+    @apply text-xs uppercase text-center;
 }
 
 @screen md {

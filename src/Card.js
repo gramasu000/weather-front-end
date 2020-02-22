@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import "./Card.css";
-import LocationCard from "./LocationCard.js";
+import TextCard from "./TextCard.js";
 import WeatherCard from "./WeatherCard.js";
 import TemperatureCard from "./TemperatureCard.js";
 
@@ -11,7 +11,7 @@ class Card extends Component {
         if (this.props.type === "location") {
             return (
                 <div class="CardContainer">
-                    <LocationCard content={this.props.content} />
+                    <TextCard weight="h2" content={this.props.content} />
                 </div>
             );
         } else if (this.props.type === "weather") {
@@ -21,7 +21,13 @@ class Card extends Component {
                     <TemperatureCard content={this.props.content.temperature} />
                 </div>
             );
-        }
+        } else {
+            return (
+                <div class="CardContainer">
+                    <TextCard content={this.props.content} />
+                </div>
+            );
+        }   
 
     }
 }

@@ -6,7 +6,11 @@ import OpenWeatherIcon from "./OpenWeatherIcon.js"
 class Icon extends Component {
 
     render() {
-        return (<OpenWeatherIcon />)
+        if (this.props.name === "01d") {
+            return (<SunnyIcon />); 
+        } else {
+            return (<OpenWeatherIcon />);
+        }
     }
 }
 
