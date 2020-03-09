@@ -26,13 +26,14 @@ class App extends Component {
                     feellike: "40°F"
                 }
             },
-            weatherDate: {
-                text: "Forecast for February 22, 2020 at 2:57:30 PM"
+            message: {
+                text: "Fake Data"
             },
-            dataRetrievalDate: {
-                text: "This data was retrieved on February 22, 2020 at 2:57:30 PM"
-            }
         }
+    }
+
+    updateWeather() {
+        
     }
 
     render() {
@@ -42,8 +43,7 @@ class App extends Component {
                 <div id="Contents">
                     <Card type="location" content={this.state.location} />
                     <Card type="weather" content={this.state.weather} />
-                    <Card type="text" content={this.state.weatherDate} />
-                    <Card type="text" content={this.state.dataRetrievalDate} />
+                    <Card type="text" content={this.state.message} />
                 </div>
             </div>
         );
