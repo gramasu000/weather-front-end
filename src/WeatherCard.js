@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import Icon from "./icons/Icon.js";
+import Icon from "./Icon.js";
 
 class WeatherCard extends Component {
 
@@ -7,7 +7,7 @@ class WeatherCard extends Component {
         return (
             <div class="Card" id="WeatherCard">
                 <div class="h-24 md:h-40">
-                    <Icon name="01d" />
+                    <Icon name={this.props.content.icon} />
                 </div>
                 <div class="TextCenter">
                     <h2>{this.props.content.main}</h2>

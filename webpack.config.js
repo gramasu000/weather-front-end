@@ -19,6 +19,13 @@ module.exports = {
             { loader:"css-loader", options: { importLoaders: 1 } },
             "postcss-loader"
         ]
+      },
+      {
+        test: /\.svg$/i,
+        use: [
+            "file-loader",
+            { loader: "image-webpack-loader" }
+        ]
       }
     ]
   },

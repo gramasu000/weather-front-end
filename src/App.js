@@ -31,7 +31,7 @@ class App extends Component {
                 text: "Fake Data"
             },
         }
-        setInterval(this.updateWeather.bind(this), 15*60*1000);
+        setInterval(this.updateWeather.bind(this), 60*1000);
         this.updateWeather();
     }
 
