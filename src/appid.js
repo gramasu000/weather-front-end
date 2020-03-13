@@ -1,4 +1,4 @@
 // Put OpenWeather API key here
-appid = ""
+let appid = "";
 
 export default appid;
