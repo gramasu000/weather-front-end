@@ -34,7 +34,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
-    //publicPath: "https://gramasu000.github.com/weather-front-end/dist/",
+    //publicPath: "https://gramasu000.github.io/weather-front-end/dist/",
     filename: "bundle.js"
   },
   devServer: {
