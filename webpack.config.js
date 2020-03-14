@@ -4,7 +4,6 @@ const webpack = require("webpack");
 module.exports = {
   entry: "./src/index.js",
   mode: "development",
-  //mode: "production",
   module: {
     rules: [
       {
@@ -34,7 +33,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist/"),
     publicPath: "/dist/",
-    //publicPath: "https://gramasu000.github.io/weather-front-end/dist/",
     filename: "bundle.js"
   },
   devServer: {

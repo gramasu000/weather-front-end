@@ -6,8 +6,18 @@ git push --delete origin gh-pages
 git branch gh-pages
 git checkout gh-pages
 
-# Remove files besides the static website and gitignored files (and this file)
+# Replace url to dist/bundle.js in public/index.js 
+sed -i "s/\.\.\/dist\/bundle.js/https:\/\/gramasu000.github.io\/weather-front-end\/dist\/bundle.js/g" public/index.js
 
+# Replace publicPath and mode properties in webpack.config.js 
+sed -i "s/mode: \"development\"/mode: \"production\"/g" webpack.config.js
+sed -i "s/publicPath: \"\/dist\/\"/publicPath: \"https:\/\/gramasu000.github.io\/weather-front-end\/dist\/\"/g" webpack.config.js
+
+
+# Build webpack static site
+npm run build
+
+# Remove files besides the static website and gitignored files (and this file)
 rm webpack.config.js package.json package-lock.json postcss.config.js .babelrc
 rm README.md
 
