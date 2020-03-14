@@ -6,8 +6,8 @@ git push --delete origin gh-pages
 git branch gh-pages
 git checkout gh-pages
 
-# Replace url to dist/bundle.js in public/index.js 
-sed -i "s/\.\.\/dist\/bundle.js/https:\/\/gramasu000.github.io\/weather-front-end\/dist\/bundle.js/g" public/index.js
+# Replace url to dist/bundle.js in public/index.html
+sed -i "s/\.\.\/dist\/bundle.js/https:\/\/gramasu000.github.io\/weather-front-end\/dist\/bundle.js/g" public/index.html
 
 # Replace publicPath and mode properties in webpack.config.js 
 sed -i "s/mode: \"development\"/mode: \"production\"/g" webpack.config.js
