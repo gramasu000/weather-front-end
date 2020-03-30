@@ -11,28 +11,29 @@
 }
 
 .Card h1 {
-    @apply text-3xl uppercase text-center;
+    @apply text-6xl uppercase text-center;
 }
 
 .Card h2 {
-    @apply text-xl uppercase text-center;
+    @apply text-4xl uppercase text-center;
 }
 
 .Card p {
-    @apply text-xs uppercase text-center;
+    @apply text-base uppercase text-center;
 }
 
-@screen md {
-    .Card h1 {
-        @apply text-6xl;
-    }
+.Card input[type=text] {
+  @apply text-4xl text-center bg-gray-200 text-black;
+}
 
-    .Card h2 {
-        @apply text-4xl;
-    }
+.Card input[type=text]::placeholder {
+  @apply text-black;
+}
 
-    .Card p {
-        @apply text-base;
-    }
+.Card input[type=text]:focus {
+    @apply bg-white;
+}
 
+.Card input[type=text]:focus::placeholder {
+    @apply text-gray-600;
 }

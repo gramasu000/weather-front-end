@@ -10,11 +10,11 @@ const EVERY_MINUTE = 60*1000
 class App extends Component {
 
   constructor(props) {
-      super(props);
-      this.state = WeatherData.getDefaultState()
-      setInterval(WeatherData.updateWeather.bind(WeatherData, this), EVERY_MINUTE);
-      WeatherData.updateWeather(this);
-    }
+    super(props);
+    this.state = WeatherData.getDefaultState();
+    setInterval(WeatherData.updateWeather.bind(WeatherData, this), EVERY_MINUTE);
+    WeatherData.updateWeather(this);
+  }
   
     render() {
       return (

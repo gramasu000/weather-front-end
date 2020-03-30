@@ -6,7 +6,7 @@ class WeatherCard extends Component {
     render() {
         return (
             <div className="Card" id="WeatherCard">
-                <div className="h-24 md:h-40">
+                <div className="h-40">
                     <Icon name={this.props.content.icon} />
                 </div>
                 <div className="TextCenter">
