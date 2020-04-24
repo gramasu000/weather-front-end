@@ -22,18 +22,3 @@
     @apply text-base uppercase text-center;
 }
 
-.Card input[type=text] {
-  @apply text-4xl text-center bg-gray-200 text-black;
-}
-
-.Card input[type=text]::placeholder {
-  @apply text-black;
-}
-
-.Card input[type=text]:focus {
-    @apply bg-white;
-}
-
-.Card input[type=text]:focus::placeholder {
-    @apply text-gray-600;
-}

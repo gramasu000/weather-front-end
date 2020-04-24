@@ -22,13 +22,15 @@ class Card extends Component {
                     <TemperatureCard content={this.props.content.temperature} />
                 </div>
             );
-        } else {
+        } else if (this.props.type === "text") {
             return (
                 <div className="CardContainer">
                     <TextCard content={this.props.content} />
                 </div>
             );
-        }   
+        } else {
+            return;
+        }
 
     }
 }
