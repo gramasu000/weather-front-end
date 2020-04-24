@@ -1,9 +1,15 @@
 import React, {Component} from "react";
+import { connect } from "react-redux";
 import "./Header.css";
 import Icon from "./Icon.js";
 
-class Header extends Component {
+const mapStateToProps = function(state) {
+  return {
+    name: state.name
+  }
+}
 
+class Header extends Component {
     render() {
         return (
             <nav className="Header">
@@ -14,4 +20,6 @@ class Header extends Component {
     }
 }
 
-export default Header;
+const ConnectedHeader = connect(mapStateToProps)(Header);
+
+export default ConnectedHeader;

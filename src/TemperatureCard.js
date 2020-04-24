@@ -1,4 +1,14 @@
 import React, {Component} from "react";
+import { connect } from "react-redux";
+
+const mapStateToProps = function (state) {
+  return {
+    temp: state.temperature,
+    tempmax: state.maxTemperature,
+    tempmin: state.minTemperature,
+    feellike: state.feelTemperature
+  }
+}
 
 class TemperatureCard extends Component {
     
@@ -8,11 +18,11 @@ class TemperatureCard extends Component {
             <div className="Card" id="TemperatureCard">
                 <div className="flex">
                     <div>
-                        <h1 className="mt-1">{this.props.content.temp}</h1>
+                        <h1 className="mt-1">{this.props.temp}</h1>
                     </div>
                     <div className="ml-4">
-                        <h2>{this.props.content.tempmax}</h2>
-                        <h2>{this.props.content.tempmin}</h2>
+                        <h2>{this.props.tempmax}</h2>
+                        <h2>{this.props.tempmin}</h2>
                     </div>
                 </div>
                 <div className="mt-4">
@@ -20,7 +30,7 @@ class TemperatureCard extends Component {
                         <p>Feels Like</p>
                     </div>
                     <div className="TextCenter">
-                        <h1>{this.props.content.feellike}</h1>
+                        <h1>{this.props.feellike}</h1>
                     </div>
                 </div>
             </div>
@@ -29,4 +39,6 @@ class TemperatureCard extends Component {
     }
 }
 
-export default TemperatureCard;
+const ConnectedTemperatureCard = connect(mapStateToProps)(TemperatureCard);
+
+export default ConnectedTemperatureCard;

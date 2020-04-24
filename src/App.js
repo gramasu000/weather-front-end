@@ -1,33 +1,38 @@
 import React, {Component} from "react";
-import Header from "./Header.js";
+import { connect } from "react-redux";
+import ConnectedHeader from "./Header.js";
 import Card from "./Card.js";
-import * as WeatherData from "./weather-data.js"; 
 import {hot} from "react-hot-loader"; 
 import "./App.css";
 
 const EVERY_MINUTE = 60*1000
 
-class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = WeatherData.getDefaultState();
-    setInterval(WeatherData.updateWeather.bind(WeatherData, this), EVERY_MINUTE);
-    WeatherData.updateWeather(this);
+const mapStateToProps = function(state) {
+  return {
+    menuMode: state.menuMode
   }
-  
-    render() {
+}
+
+class App extends Component { 
+  render() {
+    if (this.props.menuMode) {
+      return;
+    } else {
       return (
         <div id="App">
-          <Header name={this.state.name} />
+          <ConnectedHeader />
           <div id="Contents">
-            <Card type="location" content={this.state.location} />
-            <Card type="weather" content={this.state.weather} />
-            <Card type="text" content={this.state.message} />
+            <Card type="weather" />
           </div>
         </div>
       );
     }
+  }
 }
 
-export default hot(module)(App);
+const ConnectedApp = connect(mapStateToProps)(App);
+
+export default ConnectedApp;
+
+//<Card type="text" />
+//<Card type="location" />
