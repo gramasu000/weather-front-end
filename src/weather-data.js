@@ -3,21 +3,25 @@ import appid from "./appid.js";
 export function getDefaultState() {
   return {
     name: "OpenWeather",
-    location: {
-        text: "New York, US"
+    menuMode: false,
+    locationInput: {
+      input: "",
+      defaultID: 5128581,
+      defaultCity: "New York",
+      defaultCountry: "US"
     },
+    menuItems: [],
+    selected: [],
     weather: {
-        weather: {
-            icon: "01d",
-            main: "sunny",
-            description: "mostly sunny"
-        },
-        temperature: {
-            temp: "41°F",
-            tempmin: "38°F",
-            tempmax: "44°F",
-            feellike: "40°F"
-        }
+      icon: "01d",
+      main: "sunny",
+      description: "mostly sunny"
+    },
+    temperature: {
+      temp: "41°F",
+      tempmin: "38°F",
+      tempmax: "44°F",
+      feellike: "40°F"
     },
     message: {
         text: "Fake Data"

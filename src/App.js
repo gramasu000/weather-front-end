@@ -16,13 +16,22 @@ const mapStateToProps = function(state) {
 class App extends Component { 
   render() {
     if (this.props.menuMode) {
-      return;
+      return (
+        <div id="App">
+          <ConnectedHeader />
+          <div id="Contents">
+            <Card type="connectedLocationInput" />
+            <Card type="connectedMenu" />
+          </div>
+        </div>
+      );
     } else {
       return (
         <div id="App">
           <ConnectedHeader />
           <div id="Contents">
-            <Card type="weather" />
+            <Card type="connectedLocation" />
+            <Card type="connectedWeather" />
           </div>
         </div>
       );

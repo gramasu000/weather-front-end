@@ -9,23 +9,29 @@ class Card extends Component {
     
     render () {
 
-        if (this.props.type === "location") {
+        if (this.props.type === "connectedLocation") {
             return (
                 <div className="CardContainer">
                     <ConnectedLocationCard />
                 </div>
             );
-        } else if (this.props.type === "weather") {
+        } else if (this.props.type === "connectedWeather") {
             return (
                 <div className="CardContainer">
                     <ConnectedWeatherCard />
                     <ConnectedTemperatureCard />
                 </div>
             );
-        } else if (this.props.type === "text") {
+        } else if (this.props.type === "connectedLocationInput") {
             return (
                 <div className="CardContainer">
-                    <TextCard content={this.props.content} />
+                    <ConnectedLocationInputCard />
+                </div>
+            );
+        } else if (this.props.type === "connectedMenu") {
+            return (
+                <div className="CardContainer">
+                    <ConnectedMenuCard />
                 </div>
             );
         } else {
