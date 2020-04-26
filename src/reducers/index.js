@@ -1,5 +1,5 @@
 const initialState = {
-  name: "OpenWeather",
+  title: "OpenWeather",
   menuMode: false,
   locationInput: "",
   defaultID: 5128581,
@@ -19,7 +19,7 @@ const initialState = {
 
 export default function rootReducer(state, action) {
   if (typeof state === 'undefined') {
-    return initState
+    return initialState
   } else {
     return state
   }

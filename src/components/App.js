@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import { connect } from "react-redux";
-import ConnectedHeader from "./Header.js";
-import Card from "./Card.js";
-import {hot} from "react-hot-loader"; 
+import ConnectedHeader from "./header/Header.js";
+//import Card from "./Card.js";
+//import {hot} from "react-hot-loader"; 
 import "./App.css";
 
 const EVERY_MINUTE = 60*1000
@@ -29,10 +29,6 @@ class App extends Component {
       return (
         <div id="App">
           <ConnectedHeader />
-          <div id="Contents">
-            <Card type="connectedLocation" />
-            <Card type="connectedWeather" />
-          </div>
         </div>
       );
     }
@@ -45,3 +41,7 @@ export default ConnectedApp;
 
 //<Card type="text" />
 //<Card type="location" />
+//<div id="Contents">
+//<Card type="connectedLocation" />
+//<Card type="connectedWeather" />
+//</div>
