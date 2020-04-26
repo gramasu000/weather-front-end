@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { connect } from "react-redux";
 import ConnectedHeader from "./header/Header.js";
-//import Card from "./Card.js";
+import Card from "./cards/Card.js";
 //import {hot} from "react-hot-loader"; 
 import "./App.css";
 
@@ -29,6 +29,9 @@ class App extends Component {
       return (
         <div id="App">
           <ConnectedHeader />
+          <div id="Contents">
+            <Card type="connectedWeatherTemperature" />
+          </div>
         </div>
       );
     }
@@ -41,7 +44,4 @@ export default ConnectedApp;
 
 //<Card type="text" />
 //<Card type="location" />
-//<div id="Contents">
 //<Card type="connectedLocation" />
-//<Card type="connectedWeather" />
-//</div>
