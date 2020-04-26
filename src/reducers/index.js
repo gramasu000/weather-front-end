@@ -1,5 +1,4 @@
-
-const initState = {
+const initialState = {
   name: "OpenWeather",
   menuMode: false,
   locationInput: "",
@@ -18,7 +17,7 @@ const initState = {
   message: "Fake Data",
 };
 
-export default function mainReducer(state, action) {
+export default function rootReducer(state, action) {
   if (typeof state === 'undefined') {
     return initState
   } else {
