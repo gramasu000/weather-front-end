@@ -23,9 +23,9 @@
 }
 
 .Card input[type=text] {
-  @apply text-4xl text-center bg-gray-200 text-black;
+  @apply text-4xl uppercase text-center bg-gray-200;
 }
-
+/*
 .Card input[type=text]::placeholder {
   @apply text-black;
 }
@@ -37,7 +37,7 @@
 .Card input[type=text]:focus::placeholder {
     @apply text-gray-600;
 }
-/*
+
 .MenuDiv ul {
   @apply border-black border-4;
 } */

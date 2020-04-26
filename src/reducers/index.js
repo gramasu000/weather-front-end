@@ -1,7 +1,7 @@
 const initialState = {
   title: "OpenWeather",
-  menuMode: false,
-  locationInput: "",
+  menuMode: true,
+  locationInput: "Test",
   defaultID: 5128581,
   defaultCity: "New York",
   defaultCountry: "US",

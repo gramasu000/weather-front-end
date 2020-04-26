@@ -9,7 +9,7 @@ const mapStateToProps = function(state) {
 
 function LocationCard({locationText}) {
   return (
-    <div className="Card">
+    <div className="Card" id="LocationCard">
       <h2>{locationText}</h2>
     </div>
   );

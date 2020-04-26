@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.css";
 import ConnectedLocationCard from "./LocationCard.js";
+import ConnectedLocationInputCard from "./LocationInputCard.js";
 import ConnectedWeatherCard from "./WeatherCard.js";
 import ConnectedTemperatureCard from "./TemperatureCard.js";
 
