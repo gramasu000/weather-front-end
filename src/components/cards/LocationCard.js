@@ -1,18 +1,20 @@
-import React, { Component } from 'react';
-import "./LocationCard.css";
+import React from 'react';
+import { connect } from "react-redux";
 
-
-export default class LocationCard extends Component {
-
-  render() {
-    return (
-        <div id="LocationCard" className="Card">
-          <input size="20" type="text" placeholder={this.props.content.name} />
-        </div>
-    );
+const mapStateToProps = function(state) {
+  return {
+    locationText: `${state.defaultCity}, ${state.defaultCountry}` 
   }
-
 }
-//<ul className="Menu">
-//          <li>Hi</li>
-//         </ul>
+
+function LocationCard({locationText}) {
+  return (
+    <div className="Card">
+      <h2>{locationText}</h2>
+    </div>
+  );
+}
+
+const ConnectedLocationCard = connect(mapStateToProps)(LocationCard);
+
+export default ConnectedLocationCard;

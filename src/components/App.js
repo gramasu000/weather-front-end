@@ -30,6 +30,7 @@ class App extends Component {
         <div id="App">
           <ConnectedHeader />
           <div id="Contents">
+            <Card type="connectedLocation" />
             <Card type="connectedWeatherTemperature" />
           </div>
         </div>
@@ -44,4 +45,3 @@ export default ConnectedApp;
 
 //<Card type="text" />
 //<Card type="location" />
-//<Card type="connectedLocation" />
