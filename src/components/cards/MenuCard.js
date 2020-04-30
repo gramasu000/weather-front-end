@@ -13,9 +13,17 @@ function MenuCard({ menuItems, selected }) {
   
   const convertToListItem = (entry) => {
     if (entry.id === selected) {
-      return <li key={entry.id} className="bg-gray-300"><h2>{entry.city}, {entry.country}</h2></li>; 
+      return (
+        <li key={entry.id} className="bg-gray-300">
+          <h2>{entry.city}, {entry.country}</h2>
+        </li>
+      ); 
     } else {
-      return <li key={entry.id} className="bg-gray-100"><h2>{entry.city}, {entry.country}</h2></li>; 
+      return (
+        <li key={entry.id} className="bg-gray-100">
+          <h2>{entry.city}, {entry.country}</h2>
+        </li>
+      ); 
     }
   };
 
