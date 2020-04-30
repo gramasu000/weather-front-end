@@ -21,6 +21,7 @@ class App extends Component {
           <ConnectedHeader />
           <div id="Contents">
             <Card type="connectedLocationInput" />
+            <Card type="connectedMenu" />
           </div>
         </div>
       );
@@ -44,4 +45,3 @@ export default ConnectedApp;
 
 //<Card type="text" />
 //<Card type="location" />
-//<Card type="connectedMenu" />

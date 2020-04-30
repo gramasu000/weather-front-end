@@ -5,8 +5,49 @@ const initialState = {
   defaultID: 5128581,
   defaultCity: "New York",
   defaultCountry: "US",
-  menuItems: [],
-  selected: [],
+  menuItems: [
+    {
+      id: 1,
+      city: "London",
+      country: "UK"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+    {
+      id: 2,
+      city: "New York",
+      country: "US"
+    },
+  ],
+  selected: [2],
   weatherIcon: "01d",
   weatherMain: "sunny",
   weatherDescription: "mostly sunny",
@@ -16,6 +57,7 @@ const initialState = {
   feelTemperature: "40°F",
   message: "Fake Data",
 };
+
 
 export default function rootReducer(state, action) {
   if (typeof state === 'undefined') {

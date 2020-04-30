@@ -11,7 +11,7 @@ const mapStateToProps = function (state) {
 function LocationInputCard({locationInput}) {
   return (
     <div className="Card" id="LocationInputCard">
-      <input type="text" value={locationInput} readonly></input>
+      <input type="text" defaultValue={locationInput}></input>
     </div>
   );
 }

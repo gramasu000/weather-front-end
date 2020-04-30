@@ -4,6 +4,7 @@ import ConnectedLocationCard from "./LocationCard.js";
 import ConnectedLocationInputCard from "./LocationInputCard.js";
 import ConnectedWeatherCard from "./WeatherCard.js";
 import ConnectedTemperatureCard from "./TemperatureCard.js";
+import ConnectedMenuCard from "./MenuCard.js";
 
 function Card({type}) {
   switch (type) {

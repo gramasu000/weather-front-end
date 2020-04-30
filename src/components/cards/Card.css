@@ -22,9 +22,23 @@
     @apply text-base uppercase text-center;
 }
 
-.Card input[type=text] {
-  @apply text-4xl uppercase text-center bg-gray-200;
+#LocationCard, #LocationInputCard, #MenuCard {
+  @apply flex justify-center w-1/2;
 }
+
+#LocationInputCard input[type=text] {
+  @apply text-4xl uppercase text-center bg-gray-200 w-full;
+}
+
+#MenuCard ul {
+  @apply w-full overflow-y-auto;
+  max-height: 26rem;   
+}
+
+#MenuCard li {
+  @apply bg-gray-100 border-2 border-gray-400;
+}
+
 /*
 .Card input[type=text]::placeholder {
   @apply text-black;
