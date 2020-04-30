@@ -17,37 +17,37 @@ const initialState = {
       country: "US"
     },
     {
-      id: 2,
+      id: 3,
       city: "New York",
       country: "US"
     },
     {
-      id: 2,
+      id: 4,
       city: "New York",
       country: "US"
     },
     {
-      id: 2,
+      id: 5,
       city: "New York",
       country: "US"
     },
     {
-      id: 2,
+      id: 6,
       city: "New York",
       country: "US"
     },
     {
-      id: 2,
+      id: 7,
       city: "New York",
       country: "US"
     },
     {
-      id: 2,
+      id: 8,
       city: "New York",
       country: "US"
     },
   ],
-  selected: [2],
+  selected: 7,
   weatherIcon: "01d",
   weatherMain: "sunny",
   weatherDescription: "mostly sunny",

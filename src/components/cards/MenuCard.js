@@ -9,11 +9,16 @@ const mapStateToProps = function(state) {
   }
 }
 
-let convertToListItem = function(entry) {
-  return <li key={entry.id}><h2>{entry.city}, {entry.country}</h2></li>; 
-}
-
 function MenuCard({ menuItems, selected }) {
+  
+  const convertToListItem = (entry) => {
+    if (entry.id === selected) {
+      return <li key={entry.id} className="bg-gray-300"><h2>{entry.city}, {entry.country}</h2></li>; 
+    } else {
+      return <li key={entry.id} className="bg-gray-100"><h2>{entry.city}, {entry.country}</h2></li>; 
+    }
+  };
+
   const listItems = menuItems.map(convertToListItem);
   return (
     <div className="Card" id="MenuCard">
