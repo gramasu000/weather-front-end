@@ -2,16 +2,17 @@ import React from "react";
 import { connect } from "react-redux";
 
 
-const mapStateToProps = function (state) {
+const mapStateToProps = function (state, ownProps) {
   return {
-    locationInput: state.locationInput 
+    locationInput: state.locationInput, 
+    locationInputRef: ownProps.inputRef
   }
 }
 
-function LocationInputCard({locationInput}) {
+function LocationInputCard({locationInput, locationInputRef}) {
   return (
     <div className="Card" id="LocationInputCard">
-      <input type="text" defaultValue={locationInput}></input>
+      <input type="text" defaultValue={locationInput} ref={locationInputRef} />
     </div>
   );
 }

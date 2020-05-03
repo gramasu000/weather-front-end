@@ -6,7 +6,7 @@ const initialState = {
   defaultCity: "New York",
   defaultCountry: "US",
   menuItems: [
-/*    {
+    {
       id: 1,
       city: "London",
       country: "UK"
@@ -45,7 +45,7 @@ const initialState = {
       id: 8,
       city: "New York",
       country: "US"
-    },*/
+    },
   ],
   selected: 7,
   weatherIcon: "01d",

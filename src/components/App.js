@@ -14,13 +14,33 @@ const mapStateToProps = function(state) {
 }
 
 class App extends Component { 
+
+  constructor(props) {
+    super(props);
+    this.locationInputRef = React.createRef();
+  }
+
+  focus() {
+    if (this.props.menuMode) {
+      this.locationInputRef.current.focus();
+    }
+  }
+
+  componentDidMount() {
+    this.focus();
+  }
+
+  componentDidUpdate() {
+    this.focus();
+  }
+
   render() {
     if (this.props.menuMode) {
       return (
         <div id="App">
           <ConnectedHeader />
           <div id="Contents">
-            <Card type="connectedLocationInput" />
+            <Card type="connectedLocationInput" inputRef={this.locationInputRef} />
             <Card type="connectedMenu" />
           </div>
         </div>

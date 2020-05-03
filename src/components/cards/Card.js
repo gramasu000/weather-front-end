@@ -6,7 +6,7 @@ import ConnectedWeatherCard from "./WeatherCard.js";
 import ConnectedTemperatureCard from "./TemperatureCard.js";
 import ConnectedMenuCard from "./MenuCard.js";
 
-function Card({type}) {
+function Card({type, inputRef}) {
   switch (type) {
     case "connectedLocation":
       return (
@@ -24,7 +24,7 @@ function Card({type}) {
     case "connectedLocationInput":
       return (
         <div className="CardContainer">
-          <ConnectedLocationInputCard />
+          <ConnectedLocationInputCard inputRef={inputRef} />
         </div>
       );
     case "connectedMenu":
